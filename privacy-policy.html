@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>浪桥笔记隐私政策</title>
+    <title>浪桥笔记隐私政策 · 浪橋筆記私隱政策</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
@@ -21,9 +21,18 @@
         li { margin-bottom: 6px; }
         .date { color: #999; font-size: 13px; margin-bottom: 24px; }
         .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; font-size: 12px; color: #aaa; }
+        .lang-toggle {
+            position: fixed; top: 12px; right: 12px; z-index: 10;
+            background: #fff; border: 1px solid #ddd; border-radius: 16px;
+            padding: 4px 12px; font-size: 13px; color: #555; cursor: pointer;
+        }
+        .lang-toggle:hover { background: #f0f0f0; }
     </style>
 </head>
 <body>
+    <button class="lang-toggle" id="langToggle" onclick="toggleLang()">繁體</button>
+
+    <div id="zh-hans">
     <h1>浪桥笔记隐私政策</h1>
     <p class="date">最后更新：2026年8月</p>
 
@@ -84,5 +93,88 @@
         <p>浪桥笔记 · 个人开发者运营</p>
         <p>邮箱：<a href="mailto:aa1992@vip.qq.com">aa1992@vip.qq.com</a></p>
     </div>
+    </div>
+
+    <div id="zh-hant" style="display:none">
+    <h1>浪橋筆記私隱政策</h1>
+    <p class="date">最後更新：2026年8月</p>
+
+    <p>浪橋筆記（以下簡稱「本應用」）由個人開發者營運。我們重視您的私隱。本政策說明本應用處理個人資料的基本方式，以及您可以行使的相關權利。</p>
+
+    <h2>1. 營運主體與聯絡方式</h2>
+    <ul>
+        <li><strong>產品名稱：</strong>浪橋筆記</li>
+        <li><strong>營運主體：</strong>個人開發者</li>
+        <li><strong>聯絡電郵：</strong><a href="mailto:aa1992@vip.qq.com">aa1992@vip.qq.com</a></li>
+    </ul>
+
+    <h2>2. 我們處理的資料</h2>
+    <ul>
+        <li><strong>Apple 登入資料：</strong>用於建立、識別及維護您的應用帳號。Apple 可能根據您的授權向本應用提供帳號識別碼及您選擇提供的姓名等資料。</li>
+        <li><strong>手機號碼（如您主動綁定）：</strong>您可以在個人資料頁主動綁定手機號碼（需再次通過 Apple 身份驗證）。手機號碼僅用於帳號安全與找回：若您遺失或更換登入憑證，可憑已綁定的手機號碼找回帳號。綁定為可選操作，不綁定不影響應用其他功能的正常使用。您可以在應用內隨時更換綁定的手機號碼，解綁功能將於後續版本提供。手機號碼僅保存在伺服器上，與您的帳號資料關聯儲存，不會展示予其他用戶，也不會用於營銷或其他用途。</li>
+        <li><strong>裝置識別碼與裝置資料：</strong>用於識別裝置、維持登入狀態、保障附近裝置功能正常運作及處理服務請求。</li>
+        <li><strong>位置相關資料：</strong>在您使用相關功能並授予權限時，用於提供附近裝置探索、距離感知及相關互動功能。您可以隨時在系統設定中關閉位置權限。</li>
+        <li><strong>UWB 距離資料：</strong>在支援的裝置和功能中，用於提供近距離裝置感知和心跳互動。我們不會將其用於與本應用無關的目的。</li>
+        <li><strong>動作與姿態資料：</strong>在您使用心跳互動等功能時，用於實現互動效果的展示。</li>
+        <li><strong>健康資料：</strong>在您授權後讀取步數、步行或跑步距離及心率，用於在應用內展示相關健康資訊。未經您的明確授權，本應用不會讀取這些資料。</li>
+        <li><strong>您主動在應用內產生或儲存的內容：</strong>包括系統為您產生的隨機顯示名稱、您的記錄、圖片、卡片和收藏內容等，用於提供對應的應用功能。</li>
+    </ul>
+
+    <h2>3. 資料的使用目的</h2>
+    <p>我們僅在提供和維護浪橋筆記功能所必需的範圍內處理上述資料，包括：</p>
+    <ul>
+        <li>提供帳號登入、身份識別、帳號找回與帳號安全服務；</li>
+        <li>提供附近裝置探索、距離感知及心跳互動等功能；</li>
+        <li>展示您主動儲存的記錄、圖片、卡片和收藏內容；</li>
+        <li>回應您的問題、請求和帳號操作；</li>
+        <li>維護服務穩定性並處理安全問題。</li>
+    </ul>
+
+    <h2>4. 資料儲存與分享</h2>
+    <p>應用內容可能保存在您的裝置本機。為完成帳號服務、附近裝置功能和必要的服務請求，部分帳號、裝置或功能運作資料可能在伺服器端被處理。我們不會出售您的個人資料，也不會將其用於與本應用功能無關的商業目的。</p>
+    <p>除非法律法規要求、為保護用戶或服務安全所必需，或獲得您的授權，我們不會向無關第三方提供您的個人資料。使用 Apple 登入和系統健康資料時，相關資料處理也受 Apple 及系統權限機制約束。</p>
+
+    <h2>5. 資料保留與刪除</h2>
+    <p>我們僅在實現相關功能、履行法律義務或處理爭議所需的期限內保留伺服器端資料。您可以在應用內刪除可刪除的本機記錄，也可以透過聯絡電郵提出資料刪除請求。</p>
+
+    <h2>6. 帳號註銷</h2>
+    <ul>
+        <li>您可以在應用內申請註銷帳號。提交成功後，您會立即登出，帳號進入 7 天待註銷狀態。</li>
+        <li>待註銷期間，帳號不能繼續使用需要伺服器端身份的相關功能。</li>
+        <li>如果您在 7 天內重新使用 Apple 登入，系統會取消待註銷狀態並恢復帳號。</li>
+        <li>超過 7 天後，系統將正式刪除伺服器端保存的帳號身份及與帳號相關的伺服器端關聯資料（包括已綁定的手機號碼，如有），已完成的刪除通常無法恢復。</li>
+        <li>申請註銷不會自動刪除保存在您裝置本機的記錄、軌跡、圖片、卡片和收藏內容；如需刪除本機內容，請在應用內或系統中另行處理。</li>
+    </ul>
+
+    <h2>7. 您的權利</h2>
+    <p>您可以透過應用設定或聯絡電郵，申請查閱、更正、刪除與您帳號相關的資料，綁定或更換您的手機號碼，撤回可撤回的授權，或提出私隱問題。部分權限關閉後，相關功能可能無法繼續使用。</p>
+
+    <h2>8. 政策更新</h2>
+    <p>當服務或法律要求發生變化時，我們可能更新本政策，並在本頁面註明更新時間。更新後的政策自發佈之日起生效。</p>
+
+    <div class="footer">
+        <p>浪橋筆記 · 個人開發者營運</p>
+        <p>電郵：<a href="mailto:aa1992@vip.qq.com">aa1992@vip.qq.com</a></p>
+    </div>
+    </div>
+
+    <script>
+        var isHant = false;
+        function detect() {
+            var l = (navigator.language || "").toLowerCase();
+            return l.indexOf("zh-hk") === 0 || l.indexOf("zh-tw") === 0 ||
+                   l.indexOf("zh-mo") === 0 || l.indexOf("zh-hant") === 0;
+        }
+        function render() {
+            document.getElementById("zh-hans").style.display = isHant ? "none" : "";
+            document.getElementById("zh-hant").style.display = isHant ? "" : "none";
+            document.getElementById("langToggle").textContent = isHant ? "简体" : "繁體";
+            document.documentElement.lang = isHant ? "zh-HK" : "zh-CN";
+            document.title = isHant ? "浪橋筆記私隱政策" : "浪桥笔记隐私政策";
+        }
+        function toggleLang() { isHant = !isHant; render(); }
+        isHant = detect();
+        render();
+    </script>
 </body>
 </html>
